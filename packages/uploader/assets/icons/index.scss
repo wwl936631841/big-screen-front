@@ -1,0 +1,11 @@
+
+@import '~nenv/styles/_mixins.scss';
+
+$icon: (
+    $ic_login_pass: './ic_login_pass.png'
+    $ic_login_pass_on: './ic_login_pass_on.png'
+);
+
+i.png-icon {
+    @include make-icons($icons)
+}

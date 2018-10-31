@@ -1,0 +1,5 @@
+@import '~nenv/styles/_mixins.scss';
+$icons: ( skin: './assets/skin');
+i.png-icon {
+    @include make-icons($icons)
+}

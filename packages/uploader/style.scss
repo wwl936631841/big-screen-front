@@ -1,0 +1,60 @@
+@import '~nenv/styles/_mixins.scss';
+
+$icons: (
+   done-task: './assets/icons/done-task', 
+   fav-task: './assets/icons/fav-task',
+   new-task: './assets/icons/new-task',
+   project-add: './assets/icons/project-add',
+
+   file-del: './assets/icons/file-del',
+   file-delete: './assets/icons/file-delete',
+   file-doc: './assets/icons/file-doc',
+   file-folder: './assets/icons/file-folder',
+   file-other: './assets/icons/file-other',
+   file-pdf: './assets/icons/file-pdf',
+   file-ppt: './assets/icons/file-ppt',
+   file-arh: './assets/icons/file-rar',
+   file-rename: './assets/icons/file-rename',
+   file-txt: './assets/icons/file-txt',
+   file-upload: './assets/icons/file-upload',
+   file-xls: './assets/icons/file-xls',
+   file-pic: './assets/icons/file-pic',
+   file-handon: './assets/icons/file-handon'
+  
+);
+
+$icons-hover: (
+    file-delete: './assets/icons/file-delete-hover',
+    file-rename: './assets/icons/file-rename-hover',
+    file-upload: './assets/icons/file-upload-hover',
+    file-handon: './assets/icons/file-handon-hover'
+);
+
+i.png-icon {
+    @include make-icons($icons)
+}
+
+i.png-icon {
+    @include make-icons($icons-hover , hover)
+}
+
+.tree-folder .el-tree-node__expand-icon+span::before {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: -3px;
+    width: 20px;
+  }
+  
+   .tree-folder .el-tree-node__content{
+      .el-tree-node__expand-icon+span::before {
+          margin-right: 15px;
+        content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAYAAACXtf2DAAAA8klEQVRIS+2VT2rCQBjF34uKeoBCKS49g6CgpK4K7rR3US/QC7j0BG6UXEAQJaFXKHZRBANddWXwX17JqlCiEwXBRWY583vf+3gfM8OVY5czxBBiRVIOMYsWv8PDvllqLz7izs/t0XeeZwIaZqFWyFr1p9b0y8z+EVw7dgCwkEREYJnNHxoPL3M/CR8x3HgdH0JsNCeKhCDD0wYSgU8LGuSr4xE3bmcHXGSQtHmA7N7UQMLPTQ0IbFODswNPIzLehzSi+4koenofje1cAwg+A7fdF/h2jd6oIXuMoMB7tQVUGMZ/mcZC/wBZ3FPH92JtMvsFHMJzbBKBLjQAAAAASUVORK5CYII=);
+      }
+    } 
+  .tree-folder .el-tree-node__children{
+    .el-tree-node__expand-icon+span::before {
+        margin-right: 15px;
+        content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAYAAACXtf2DAAAA8klEQVRIS+2VT2rCQBjF34uKeoBCKS49g6CgpK4K7rR3US/QC7j0BG6UXEAQJaFXKHZRBANddWXwX17JqlCiEwXBRWY583vf+3gfM8OVY5czxBBiRVIOMYsWv8PDvllqLz7izs/t0XeeZwIaZqFWyFr1p9b0y8z+EVw7dgCwkEREYJnNHxoPL3M/CR8x3HgdH0JsNCeKhCDD0wYSgU8LGuSr4xE3bmcHXGSQtHmA7N7UQMLPTQ0IbFODswNPIzLehzSi+4koenofje1cAwg+A7fdF/h2jd6oIXuMoMB7tQVUGMZ/mcZC/wBZ3FPH92JtMvsFHMJzbBKBLjQAAAAASUVORK5CYII=);
+      }
+  }
+

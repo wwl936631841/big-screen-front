@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+dist/
+theme
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.cache-loader
+.project
+.vscode
+.nenv
+*.gz
+/.idea/
+/modules/icons

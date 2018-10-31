@@ -1,0 +1,69 @@
+.nv-ledger {
+
+    position: relative;
+    height: 100%;
+    
+    .hide { height: 0px; }
+    
+    &__nav {
+        overflow: hidden;
+        width: 120px;
+        z-index: 2;
+        background-color: rgba(255,255,255,1);
+        border-radius: 4px ;
+        box-shadow: 0 0 4px 0 #BFC4B6;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__item {
+        padding: 0 10px;
+        height: 40px;
+        line-height: 40px;
+        cursor: pointer;
+        /* 给横线 */
+        &:not(:first-child):before {
+            position: absolute;
+            left: 10px;
+            content: '';
+            height: 1px;
+            //width: calc(100% - 20px);
+            width: 100%;
+            background-color: #E5E5E5;
+        }
+        /* 箭头 */
+        .left-down {
+            float: right;
+            line-height: 40px;
+        }
+    }
+    
+    &__item.active {
+        background-color: rgba(228,233,236,1);
+        color: #3b8cff;
+    }
+    &__item__child {
+        //transition: height .3s;
+        transition: all .2s linear;
+        text-indent: 25px;
+        overflow: hidden;
+    }
+
+    &.nv-left {
+        .nv-ledger__nav {
+            left: 40px;
+        }
+    }
+
+    &.nv-right {
+        .nv-ledger__nav {
+            right: 40px;
+        }
+    }
+    
+    &__pane {
+        height: 100%;
+        //overflow: hidden;
+    }
+}

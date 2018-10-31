@@ -1,0 +1,26 @@
+@import '~nenv/styles/_mixins.scss';
+
+$icons: (
+   done-task: './assets/icons/done-task', 
+   fav-task: './assets/icons/fav-task',
+   new-task: './assets/icons/new-task',
+   project-add: './assets/icons/project-add',
+
+   file-del: './assets/icons/file-del',
+   file-delete: './assets/icons/file-delete',
+   file-doc: './assets/icons/file-doc',
+   file-folder: './assets/icons/file-folder',
+   file-other: './assets/icons/file-other',
+   file-pdf: './assets/icons/file-pdf',
+   file-ppt: './assets/icons/file-ppt',
+   file-arh: './assets/icons/file-rar',
+   file-rename: './assets/icons/file-rename',
+   file-txt: './assets/icons/file-txt',
+   file-upload: './assets/icons/file-upload',
+   file-xls: './assets/icons/file-xls',
+   file-pic: './assets/icons/file-pic'
+);
+
+i.png-icon {
+    @include make-icons($icons)
+}

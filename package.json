@@ -1,0 +1,43 @@
+{
+    "name": "nv-template",
+    "version": "2.0.0",
+    "license": "MIT",
+    "description": "nenv platform stardend platform",
+    "versiondate": "2018-03-16",
+    "author": "wanghui <wanghui2@infore.com>",
+    "scripts": {
+        "nenv": "node node_modules/nenv/bin/nenv dev",
+        "current": "node ../nenv/bin/nenv",
+        "current-dev": "node ../nenv/bin/nenv",
+        "current-build": "node ../nenv/bin/nenv build",
+        "dev": "nenv dev",
+        "update": "node ../nenv/bin/nenv update",
+        "build": "node node_modules/nenv/bin/nenv dev",
+        "lint": "eslint --ext .vue,.js src"
+    },
+    "dependencies": {
+        "@riophae/vue-treeselect": "^0.0.27",
+        "echarts": "^3.7.0",
+        "d3": "^4.13.0",
+        "echarts-liquidfill": "2.0.2",
+        "element-theme-chalk": "^2.3.8",
+        "js-cookie": "^2.1.4",
+        "md5": "^2.2.1",
+        "socket.io-client": "^2.1.1",
+        "vue-echarts": "^3.0.7",
+        "vue-i18n": "^7.6.0",
+        "vue-video-player": "^5.0.2",
+        "wangeditor": "^3.1.0",
+        "esri-loader": "^2.3.0"
+    },
+    "devDependencies": {},
+    "engines": {
+        "node": ">= 8.9.0",
+        "npm": ">= 5.5.1"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "ie >= 9"
+    ]
+}

@@ -1,0 +1,10 @@
+@import '~nenv/styles/_mixins.scss';
+
+$icons: (
+    alarm: 'alarm',
+    skin: 'skin',
+    logo-theme: 'logo-theme'
+);
+i.png-icon {
+    @include make-icons($icons)
+}

@@ -1,0 +1,58 @@
+// nv专用系列样式
+.nv {
+    &-layout__top-label {
+        &:before {
+            background-color: $--color-primary;
+        }
+    }
+
+    &-dynamic-tab__item.active {
+        color: $--color-primary;
+        &:after {
+            background-color: $--color-primary;
+        }
+    }
+}
+
+.ledger-header {
+    background-color:$--color-primary;
+}
+
+
+// 冲突类
+.el-dialog__body > .nv-layout {
+    .nv-layout__top {
+        padding: 0px;
+    }
+}
+
+
+// 工具类
+.bg-primary {
+    background-color: $--color-primary
+}
+
+.nv-link {
+    color: $--color-primary;
+    cursor: pointer;
+}
+
+.nv-form-toolbox {
+    margin-top: 22px
+}
+
+.color-primary {
+    
+}
+
+
+
+
+
+
+
+/**复写饿了么样式**/
+.el-menu-item.is-active {
+    background-color: #F6F7FB;
+    border-left: 5px solid $--color-primary;
+}

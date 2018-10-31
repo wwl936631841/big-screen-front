@@ -1,0 +1,43 @@
+.nv-dynamic-tab {
+    height: 100%;
+    box-shadow: 0 0 4px #AFC5DE;
+    
+    .nv-dynamic-tabs { 
+        min-height: 700px; 
+        //overflow-y: hidden; 
+    }
+    
+    &__nav {
+        height:56px; 
+        background:rgba(246,247,251,1);
+        font-size: 16px;
+        //padding: 0 15%;
+        min-width: 800px;
+    }
+
+    &__item {
+        display: inline-block;
+        padding: 17px;
+        max-height: 56px;
+        cursor: pointer;
+        position: relative;
+        &.active {
+            // color: #338BF1;
+            &:after {
+                position: absolute;
+                content: '';
+                bottom: 5px;
+                left: 5px;
+                height: 2px;
+                width: calc(100% - 10px);
+                // background-color: #338BF1;
+            }
+        }
+    }
+    
+    &__pane {
+        //padding: 0 15%;
+        height: 100%;
+        position: relative;
+    }
+}

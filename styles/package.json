@@ -1,0 +1,19 @@
+{
+  "name": "styles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "task.js",
+  "dependencies": {
+    "element-theme-chalk": "^2.3.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "theme": "et --watch -m --out ../static/theme-nenv",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "element-theme": {
+    "theme": "../theme-nenv"
+  },
+  "author": "",
+  "license": "ISC"
+}
